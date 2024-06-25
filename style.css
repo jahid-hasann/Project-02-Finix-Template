@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Rubik:wght@300;400;500;600;700;800&display=swap');
+body{
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    
+    font-family: 'Rubik', sans-serif;
+}
+ul li{
+    list-style:none;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration:none;
+}
+/* Menu ites css start */
+.primary_menu .container-fluid{
+    max-width: 1480px;
+}
+ul.top_menu li a{
+    font-size: 17px;
+    font-weight: 500;
+    color: #111;
+    padding: 0px 19px;
+    transition: .4s;
+}
+ul.top_menu li:hover > a{
+    color: #ff3b1c;
+}
+div#navbarSupportedContent {
+    justify-content: flex-end;
+}
+.p_menu_search{padding: 0px 16px;font-size: 23px;border-right: 1px solid #ddd;}
+.p_menu_search a{
+    color: #111;
+}
+.p_menu_call{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p_menu_call_icon{
+    margin: 0px 15px;
+    font-size: 33px;
+    color: #ff3b1c;
+}
+.p_menu_call_text a{
+    color: #111;
+    font-weight: 500;
+    font-size: 17px;
+    letter-spacing: -1px;
+}
+.p_menu_call_text span{
+    display: block;
+    color: #606060;
+}
+.p_menu_button a{
+    padding: 12px 39px;
+    font-size: 17px;
+    font-weight: 500;
+    background: #ff3b1c!important;
+    border: #ff3b1c;
+    position: relative;
+    z-index: 1;
+}
+.p_menu_call_text {
+    margin-right: 30px;
+}
+
+.p_menu_button a:hover::after {
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.p_menu_button a::after {content: "";width: 0%;height: 100%;position: absolute;background: #111;top: 0;left: 0;z-index: -1;border: #111;transition: .4s;border-radius: 5px;}
+/* Dropdown menu */
+ul.top_menu li{
+    position:relative;
+}
+ul.top_menu li ul{
+    position:absolute;
+    top: 180%;
+    left: 0;
+    width: 200px;
+    height:auto;
+    background-color: #fff;
+    padding: 20px 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 10%);
+}
+ul.top_menu li ul li{
+    margin-top: 15px;
+}
+ul.top_menu li ul li a{
+    margin-top: 26px;
+}
+ul.top_menu li ul li:hover > a {
+    letter-spacing: 1px;
+}
+ul.top_menu li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    top: 140%;
+}
+ul.top_menu li ul li:first-child {
+    margin-top: 0;
+}
+/* Memu items css End */
+
+
+/* Slider section css Start */
+
+.slider_section{
+    background: url(image/main-banner2.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.slider_content h5{
+    color: #ff3c1c;
+}
+.slider_content p{
+    font-size: 18px;
+    color: #606060;
+    margin: 29px 0px;
+}
+.slider_contact{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.slider_contact span{
+    position: relative;
+    margin-right: 50px;
+    font-size: 17px;
+}
+.slider_contact a{
+    color: #111;
+    padding: 0px 7px;
+    font-size: 20px;
+    transition: .4s;
+}
+.slider_content_wrapper{height: 100vh;display: flex;justify-content: center;align-items: center;position: relative;}
+.slider_contact span::after {
+    height: 1px;
+    width: 40px;
+    content: "";
+    background: #111;
+    position: absolute;
+    top: 50%;
+    left: 75px;
+}
+
+.slider_content h1 {
+    font-size: 60px;
+    margin: 20px 0px;
+}
+.slider_contact a:hover {
+    color: #ff3b1c;
+}
+/* Banner Section CSS End */
+
+/* Banner Bottom Section CSS Start */
+
+.banner_bottom{
+    border-bottom:1px solid #ddd;
+    padding: 70px 0px;
+}
+/* Banner Bottom Section CSS End */
+
+/* About Section Css Start */
+
+.about_section{
+    padding: 70px 0px;
+}
+
+.about_img_wrap{
+    position:relative;
+}
+.about_bg_img{
+    position:absolute;
+    right: 13%;
+    bottom: 1%;
+    background: url(image/shape.png) no-repeat;
+    width: 200px;
+    height: 200px;
+    background-size: contain;
+    text-align: center;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.about_bg_text {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about_bg_text h1 {
+    color: #ff3b00;
+    font-size: 60px;
+}
+
+.about_bg_text p {
+    font-weight: 600;
+}
+.jahid_shuvo p{
+    color: #606060;
+    font-size: 16px;
+    line-height: 1.7em;
+}
+.jahid_shuvo h1{
+    font-weight: 500;
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+.jahid_shuvo h5 {
+    margin-bottom: 14px;
+    font-weight: 400;
+    color: #ff3c1c;
+    font-size: 17px;
+}
+.jahid_shuvo strong{
+    color: #606060;
+    font-weight: 400;
+    display: block;
+    font-size: 18px;
+}
+.jahid_shuvo ul{
+    padding: 0;
+    margin-top: 18px;
+    margin-bottom: 35px;
+}
+.jahid_shuvo ul li{
+    margin-top: 10px;
+    color: #606060;
+    font-size: 18px;
+}
+.jahid_shuvo ul li::before {content: "\f274";font-family: 'Font Awesome 5 Free';font-weight: 700;display: inline-block;margin-right: 15px;color: #ff3b00;font-size: 25px;}
+/* About Section Css End */
+
+
+/* Why choose us  Start*/
+.bg_common{
+    background:#f9faf9;
+}
+.choose_left{
+    position: relative;
+}
+.choose_left a:hover {
+    background: #ff3c1c;
+    color: #fff;
+}
+
+.choose_left a i {
+    display: inline-block;
+}
+.choose_left img{
+    margin-top: 20px;
+}
+.choose_left a{
+    position: absolute;
+    right: 40%;
+    bottom: 11%;
+    margin: auto;
+    width: 80px;
+    height: 80px;
+    font-size: 56px;
+    background: #fff;
+    text-align: center;
+    line-height: 83px;
+    color: #ff3c1c;
+    border-radius: 50%;
+    transition: .5s;
+    z-index: 1;
+}
+.choose_left a::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fd3719;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+    z-index: -1;
+    animation: choose-play 1.4s ease-out infinite;
+}
+  
+  @keyframes choose-play {
+    0%,30%{
+        transform:scale(0);
+        opacity:0;
+    }  
+    50%{
+        transform:scale(1.5);
+        opacity:.7;
+    }
+    100%{
+        transform:scale(1.9);
+        opacity:0;
+    }
+  }
+.choose_right{
+    background:#fff;
+    padding: 35px;
+    margin-bottom: 25px;
+    padding-top: 40px;
+    position: relative;
+    overflow: hidden;
+    transition: .4s;
+}
+.choose_right_icon{
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 90px;
+    position: relative;
+    transition: .4s;
+}
+.choose_right_icon i{
+    font-size: 36px;
+    color: #ff3b00;
+    transition: .4s;
+}
+.choose_right_text{
+    text-align: center;
+    padding-bottom: 15px;
+}
+.choose_right_text h3{
+    padding: 15px 0px;
+}
+.choose_right_text p{
+    font-size: 17px;
+    color: #606060;
+    font-weight: 400;
+    line-height: 1.6em;
+    margin-top: -11px;
+}
+.right_margin_bottom {
+    margin-top: 34px;
+}
+.right_margin_top {
+    margin-top: -35px;
+}
+.choose_right:hover {
+    transform: translateY(-14px);
+}
+
+.choose_right:hover .choose_right_icon {
+    background: #ff3b1c;
+    color: #fff;
+}
+
+.choose_right:hover .choose_right_icon i {
+    color: #fff;
+}
+.choose_right::before {content: "";width: 90%;height: 66%;position: absolute;background: #ffebe5;top: -130px;left: 0;right: 0;border-radius: 53%;margin: 0 auto;}
+
+/* Why choose us End */
+
+
+/* Business loan Start */
+.business_title_left{
+    padding: 50px;
+    margin-top: 15px;
+}
+.business_title_left h2{
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.5em;
+}
+.business_step{
+    margin-top: 30px;
+}
+.business_step ul{
+    padding: 0;
+    position: relative;
+}
+.business_step ul li{
+    margin-left: 60px;
+    position:relative;
+    margin-bottom: 25px;
+}
+.business_step ul li strong{
+    font-size: 24px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 6px;
+}
+.business_step ul li p{
+    font-size: 17px;
+    line-height: 1.6em;
+    color: #606060;
+}
+.business_step ul::before {content: "";width: 1px;height: calc(100% - 90px);background: #ff3b1c;position: absolute;left: 16px;top: 0;}
+.business_step ul li::before {
+    content: attr(data-counter);
+    position: absolute;
+    top: 0;
+    left: -13%;
+    width: 45px;
+    height: 45px;
+    background: #f9faf9;
+    text-align: center;
+    line-height: 45px;
+    border-radius: 50%;
+    color: #ff3b1c;
+    border: 1px solid #ff3b1c;
+}
+
+
+.business_title_left .btn {
+    margin-top: 15px;
+}
+.business_irem_right{
+    background: #ffebe5;
+    padding: 40px 40px;
+    margin-top: 40px;
+}
+.business_heading_r h5{
+    color: #606060;
+}
+.business_heading_r h1 {
+    margin-bottom: 30px;
+}
+.business_form label{
+    margin-bottom: 4px;
+}
+.business_form input{
+    padding: 10px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.business_select{
+    margin-bottom: 20px;
+}
+.business_select label{
+    margin-bottom: 4px;
+}
+.business_select select{
+    width: 100%;
+    height: 56px;
+    font-size: 17px;
+    line-height: 51px;
+    color: #606060;
+}
+.business_select select option{
+    padding: 15px 0px;
+}
+/* Business loan End */
+
+/* Call to action Start */
+
+.call_action_wrapper{
+    background: #e73c3e;
+    padding: 65px 50px;
+    border-radius: 7px;
+}
+.call_title h2{
+    color: #fff;
+    font-size: 37px;
+    font-weight: 400;
+    border-right: 1px solid #ddd;
+    margin-right: 0px;
+}
+.call_icon{
+    width: 70px;
+    height: 70px;
+    background: #fff;
+    line-height: 70px;
+    text-align: center;
+    border-radius: 50%;
+    color: #ff3c1c;
+    font-size: 40px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+.call_number{line-height: 70px;}
+.call_number a{
+    color: #fff;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: rubik,sans-serif;
+}
+/* Call to action End */
+
+/* Company value Start */
+
+.company_left h2{margin-bottom: 35px;font-size: 36px;}
+.company_items{
+    display: flex;
+}
+.company_icon{
+    display: flex;
+    width: 80px;
+    height: auto;
+    margin-right: 25px;
+    justify-content: center;
+    align-items: center;
+}
+.company_icon i{
+    font-size: 40px;
+    color: #e73c3e;
+}
+.company_text{position: relative;top: 30px;margin-bottom: 10px;}
+.company_text h3{
+    font-size: 25px;
+}
+.company_text p{color: #606060;font-size: 17px;line-height: 1.7em;}
+.company_image img {
+    margin-top: 45px;
+}
+./* Company value End */
+
+/* services Section CSS Start */
+
+.section_nav{
+    border-bottom: 1px solid #606060;
+    padding-bottom: 20px;
+    margin-bottom: 50px!important;
+}
+.section_nav li{
+    flex: 1 0 auto;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #606060;
+    margin-bottom: 30px;
+}
+.section_nav li a span i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background: #fff;
+    color: #606060;
+    font-size: 40px;
+    box-shadow: 0 2px 28px 0 rgb(0 0 0 / 13%);
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+.section_nav li a strong{
+        font-size: 21px;
+        color: #111;
+        font-weight: 700;
+        text-transform: capitalize;
+}
+.text_title h2{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.text_title p{
+    font-size: 17px;
+    line-height: 1.7em;
+    color: #606060;
+    margin-bottom: 20px;
+}
+.tab_content_text ul{
+    padding-left: 0;
+}
+.tab_content_text ul strong{
+    font-size: 26px;
+    margin-bottom: 15px;
+    display: block;
+}
+.tab_content_text ul li{
+    color: #606060;
+    margin-bottom: 13px;
+    position: relative;
+    margin-left: 25px;
+}
+.tab_content_text ul li::before {
+    width: 10px;
+    height: 10px;
+    background: #e73c3e;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    left: -23px;
+    top: 7px;
+}
+.text_loan h2{
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+.text_loan p{
+    color: #606060;
+    line-height: 1.7em;
+}
+.text_guid h2{
+    font-size: 26px;
+    margin-bottom: 18px;
+}
+.text_guid p{
+    color: #606060;
+    line-height: 1.7em;
+    font-size: 17px;
+}
+.services_wrapper .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #ff3b1c;
+}
+/* services Section CSS End */
+
+/* Client Fitback Section Start */
+
+.client_text p{
+    font-size: 24px;
+    color: #111;
+    margin-bottom: 18px;
+}
+.client_text h4{
+    font-size: 16px;
+    color: #e73c3e;
+    font-weight: 500;
+}
+.client_text span{
+    color: #606060;
+}
+.client_img{
+    position: relative;
+}
+.client_img span{
+    position: absolute;
+    bottom: 55px;
+    left: 77px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    text-align: center;
+    line-height: 81px;
+    font-size: 39px;
+    color: #ff3b1c;
+    cursor: pointer;
+    transition: .6s;
+}
+.client_img span:hover {
+    background: #ff3b1c;
+    color: #fff;
+}
+/* Client Fitback Section End */
+
+
+/* Team section CSS start */
+
+.team_img{
+    position: relative;
+}
+.team_img img{
+    border-radius: 10px 5px 10px 5px;
+}
+.team_img_social{
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.team_img_social ul{
+    padding-left: 0;
+    text-align: center;
+}
+.team_img_social ul li{
+    display: inline-block;
+    text-align:center;
+    margin: 0px 3px;
+    
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s;
+}
+.team_details_wrap:hover .team_img_social ul li{
+    visibility: visible;
+    opacity: 1;
+    transform:translateY(0)
+}
+.team_details_wrap .team_img_social ul li:nth-child(1){
+    transition:.30s;
+}
+.team_details_wrap .team_img_social ul li:nth-child(2){
+    transition:.50s;
+}
+.team_details_wrap .team_img_social ul li:nth-child(3){
+    transition:.70s;
+}
+.team_details_wrap .team_img_social ul li:nth-child(4){
+    transition:.90s;
+}
+
+.team_img_social ul li a{
+    display:block;
+    font-size: 22px;
+    color: #111;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 40px;
+    transition: .4s;
+}
+.team_img_social ul li a:hover {
+    background: #e73c3e;
+    color: #fff;
+}
+.team_text{
+    margin-top: 20px;
+}
+.team_text h3{
+    font-size: 20px;
+    color: #e73c3e;
+    margin-bottom: 5px;
+}
+.team_text span{
+    font-size: 16px;
+    color: #606060;
+}
+/* Team section CSS End */
+
+/* Featback Section CSS Start */
+
+
+.featback_img a img{
+    max-width: 100%;
+    border-radius: 5px;
+}
+.featback_text{
+    margin-top: 20px;
+}
+.featback_text span{
+    color: #e73c3e;
+    margin-bottom: 10px;
+    display: block;
+}
+.featback_text h3 a{
+    color: #111;
+    font-size: 26px;
+    line-height: 1.4em;
+    margin-bottom: 12px;
+    display: block;
+    font-weight: 500;
+    transition: .6s;
+}
+.featback_text .featack_btn{
+    color: #111;
+    font-weight: 700;
+    transition:.5s;
+}
+
+.featback_text h3 a:hover {
+    color: #e73c3e;
+    letter-spacing: .1px;
+}
+.featback_wrapper:hover .featack_btn{
+    letter-spacing:1px;
+    color:#ff3c1c;
+}
+
+/* Featback Section CSS End */
+
+/* Footer Section CSS Start */
+
+/* Top footer Star */
+.footer_section{
+    background: #111;
+    color: #fff;
+}
+.footer_top1 a img{
+    margin-bottom: 25px;
+}
+.footer_top1 p{
+    font-size: 17px;
+    line-height: 1.7em;
+    margin-bottom: 20px;
+}
+.footer_top1_social ul{
+    padding-left: 0;
+}
+.footer_top1_social ul li{
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 500;
+}
+.footer_top1_social ul li a{
+    color: #fff;
+    padding: 0px 5px;
+    font-size: 18px;
+}
+.quick_link h4{
+    font-size: 20px;
+    border-bottom: 1px solid #333535;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.quick_link ul{
+    padding-left: 0;
+}
+.quick_link ul li a{
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 18px;
+    display: block;
+    transition: .4s;
+}
+.top_footer {
+    padding: 90px 35px;
+}
+
+.footer_top1_social ul li a:first-child {
+    margin-left: 7px;
+}
+
+.quick_link ul li a:hover {
+    letter-spacing: 1px;
+    color: #e73c3e;
+}
+.contact_wrapper{
+    display: flex;
+    margin: 15px 0px;
+}
+.contact_icon{
+    font-size: 20px;
+    margin-right: 25px;
+}
+.contact_detais ul{
+    padding-left: 0;
+}
+.contact_detais ul li a{
+    margin-bottom: 2px;
+    transition: .4s;
+}
+.contact_detais ul li a:hover {
+    color: #e73c3e;
+    letter-spacing: 0px;
+}
+/* Top footer End */
+
+/* Bottom footer Star */
+
+.bottom_footer {
+    border-top: 1px solid #292929;
+    padding: 26px 0px;
+}
+
+.bottom_footer p {
+    margin: 0;
+    color: #606060;
+}
+
+
+.bottom_footer a {
+    font-size: 20px!important;
+    color: #fff;
+    font-weight: 600;
+    transition: .4s;
+    margin-left: 5px;
+}
+
+.bottom_footer a:hover {
+    color: #e73c3e;
+}
+
+/* Bottom footer End */
+
+/* Footer Section CSS End */
